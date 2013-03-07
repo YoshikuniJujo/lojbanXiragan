@@ -30,7 +30,7 @@ Xiragan :: String
 	/ VowelU
 	/ Vowel
 	/ Consonant
-	/ space				-> { "" }
+	/ space				-> { " " }
 
 XiraganNormal :: String
 	= XiraganTailAEO
@@ -113,6 +113,7 @@ Consonant :: String
 	/ "t"				-> { "ト" }
 	/ "v"				-> { "ヴ" }
 	/ "x"				-> { "ハゥ" }
+	/ "z"				-> { "ズ" }
 
 XiraganTailAEO :: String
 	= "dja"				-> { "ぢゃ" }
@@ -218,12 +219,21 @@ TailU :: String
 	/ "'u"				-> { "ふ" }
 	/ "bu"				-> { "ぶ" }
 	/ "cu"				-> { "しゅ" }
+	/ "du"				-> { "どぅ" }
+	/ "fu"				-> { "ふぅ" }
+	/ "gu"				-> { "ぐ" }
 	/ "ju"				-> { "じゅ" }
 	/ "ku"				-> { "く" }
 	/ "lu"				-> { "る" }
+	/ "mu"				-> { "む" }
 	/ "nu"				-> { "ぬ" }
+	/ "pu"				-> { "ぷ" }
 	/ "ru"				-> { "るぅ" }
+	/ "su"				-> { "す" }
+	/ "tu"				-> { "とぅ" }
+	/ "vu"				-> { "う\"" }
 	/ "xu"				-> { "はぅ" }
+	/ "zu"				-> { "ず" }
 
 XiraganAEO :: String
 	= "i"				-> { "ユ" }
